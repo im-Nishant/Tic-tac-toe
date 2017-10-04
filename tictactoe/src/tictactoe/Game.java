@@ -45,6 +45,7 @@ public class Game extends javax.swing.JFrame {
             return true;
         }
         else if(arr[0][2]==last && arr[1][1]==last && arr[2][0]==last){
+            fun();
             return true;
         }
         return false;
@@ -92,6 +93,9 @@ public class Game extends javax.swing.JFrame {
         jMenuItem2 = new javax.swing.JMenuItem();
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenuItem1 = new javax.swing.JMenuItem();
+        jMenu3 = new javax.swing.JMenu();
+        jMenuItem4 = new javax.swing.JMenuItem();
+        jMenuItem5 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -191,6 +195,16 @@ public class Game extends javax.swing.JFrame {
         jMenu1.add(jMenuItem1);
 
         jMenuBar1.add(jMenu1);
+
+        jMenu3.setText("View");
+
+        jMenuItem4.setText(" Classic");
+        jMenu3.add(jMenuItem4);
+
+        jMenuItem5.setText("Modern");
+        jMenu3.add(jMenuItem5);
+
+        jMenuBar1.add(jMenu3);
 
         setJMenuBar(jMenuBar1);
 
@@ -505,10 +519,13 @@ public class Game extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuItem4;
+    private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JLabel l;
     // End of variables declaration//GEN-END:variables
 }
