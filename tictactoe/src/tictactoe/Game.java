@@ -98,6 +98,7 @@ public class Game extends javax.swing.JFrame {
         jMenuItem5 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("TicTacToe(Dual Player)");
 
         b1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         b1.addActionListener(new java.awt.event.ActionListener() {
@@ -182,6 +183,11 @@ public class Game extends javax.swing.JFrame {
         jMenu2.add(jMenuItem2);
 
         jMenuItem3.setText("Dual Player");
+        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem3ActionPerformed(evt);
+            }
+        });
         jMenu2.add(jMenuItem3);
 
         jMenu1.add(jMenu2);
@@ -467,7 +473,15 @@ public class Game extends javax.swing.JFrame {
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         // TODO add your handling code here:
+        this.setTitle("TicTacToe(Single Player)");
+        jLabel2.setText("CPU : X");
     }//GEN-LAST:event_jMenuItem2ActionPerformed
+
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+        // TODO add your handling code here:
+        this.setTitle("TicTacToe(Dual Player)");
+        jLabel2.setText("Player2: X");
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     /**
      * @param args the command line arguments
