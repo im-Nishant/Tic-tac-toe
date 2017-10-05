@@ -14,6 +14,8 @@ public class Tictactoe {
     /**
      * @param args the command line arguments
      */
+    
+    //Below code commented out as Game is set to the main class
     /*public static void main(String[] args) {
         // TODO code application logic here
         java.awt.EventQueue.invokeLater(new Runnable() {

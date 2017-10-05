@@ -11,7 +11,7 @@ package tictactoe;
  */
 public class Game extends javax.swing.JFrame {
     char[][] arr = new char[3][3];
-    int r, c,count=1;
+    int count=1;
     char last = 'O';
     void fun(){
         b1.setEnabled(false);
@@ -311,12 +311,38 @@ public class Game extends javax.swing.JFrame {
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
         // TODO add your handling code here:
-        this.setVisible(false);
+        
+        
+        /*this.setVisible(false);
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Game().setVisible(true);
             }
-        });
+        });*/
+        
+        //Instead of creating new instance of game, setting global variables to their initial state
+        arr = new char[3][3];
+        count=1;
+        last = 'O';
+        b1.setText("");
+        b2.setText("");
+        b3.setText("");
+        b4.setText("");
+        b5.setText("");
+        b6.setText("");
+        b7.setText("");
+        b8.setText("");
+        b9.setText("");
+        l.setText("");
+        b1.setEnabled(true);
+        b2.setEnabled(true);
+        b3.setEnabled(true);
+        b4.setEnabled(true);
+        b5.setEnabled(true);
+        b6.setEnabled(true);
+        b7.setEnabled(true);
+        b8.setEnabled(true);
+        b9.setEnabled(true);
     }//GEN-LAST:event_jButton10ActionPerformed
 
     private void b1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1ActionPerformed
